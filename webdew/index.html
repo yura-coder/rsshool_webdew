@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <title>button</title>
+    <style>button{
+        border: none;
+        } 
+    </style>
+    <title>cursor</title>
+    <style>
+        .pointer { 
+            cursor: pointer;
+        }
+    </style>
+    <title>icons</title>
+    <style>
+        .icons a {
+           color: #fff;  /*Цвет обычной ссылки */
+          }
+        .icons a :hover {
+        text-decoration: none;  /*Убираем подчеркивание */
+        color: rgb(16, 219, 16);  /*Цвет ссылки при наведении на нее курсора мыши */  
+        /*background: #e24486;  Цвет фона*/ 
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>nav</title>
+    <style>
+        .nav a {
+           color: #f5f0f0; /* Цвет обычной ссылки */ 
+           text-decoration: none; /* Убираем подчеркивание у ссылок */
+          }
+        .nav a:hover {
+        color: #2d9e0b; /* Цвет ссылки при наведении на нее курсора мыши */  
+        text-decoration: underline; /* Добавляем подчеркивание */
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="webdew">
+            <img src="assets/bg-image-wrapper.jpg" alt="фон"> 
+            <div class="header">
+                <div class="nav">
+                   <p><a href="#"> About</a></p> 
+                </div>
+                <div class="nav">
+                    <p><a href="#"> Syllabus</a></p>   
+                </div>
+                <div class="nav">
+                    <img src="assets/logo.png" alt="logo">   
+                 </div>
+                 <div class="nav">
+                    <p><a href="#">Projects</a></p>   
+                </div>
+                <div class="nav">
+                    <p><a href="#"> FAQ</a></p>   
+                </div>
+            </div>
+            <div class="your_life">
+                <h1>your life is WebDev</h1>
+            </div>
+            <div class="whateller">
+                <p>Whatever the approach to development may be, the final<br /> program must satisfy some fundamental properties</p>
+            </div>
+            <div class="button">
+                <form> 
+                    <button>
+                        <a href="#" class="pointer">    <img src="assets/default.jpg" alt="" style="vertical-align:middle"></a>
+                    </button>
+                </form>
+            </div>
+            <div class="socials">
+                <div class="icons">
+                    <a href="#" class="pointer"> <img  src="assets/mail_fff.png" alt="mail"></a>
+                </div>
+                <div class="icons">
+                    <a href="#" class="pointer"><img src="assets/facebook_fff.png" alt="facebook"></a>
+                </div>
+                <div class="icons">
+                    <a href="#" class="pointer"><img src="assets/insta_fff.png" alt="insta"></a>
+                </div> 
+                <div class="icons">
+                    <a href="#" class="pointer"><img src="assets/telegram_fff.png" alt="telegram"></a>
+                </div>   
+             </div>
+        </div>
+    </div>
 </body>
 </html>

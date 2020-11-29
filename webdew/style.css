@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.wrapper {
+    border: solid;
+    width: 1600px;
+    height: 4105px;
+}
+.webdew{
+    /*text-align: center;*/
+    border: solid;
+    width: 1600px;
+    height: 634px;
+}
+.header{
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 393px;
+    border: solid;
+    border-color: brown;
+    width: 810px;
+    height: 103px; 
+}
+.nav{
+    /*border: solid;*/
+    /*border-color: rgb(236, 229, 229);*/
+    margin: -25px;
+    color: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing:0px;
+}
+.your_life{
+    position: absolute;
+    top: 233px;
+    left: 9px;
+    color: white;
+    /*border: solid;
+    border-color: rgb(236, 247, 82);*/
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 31.5px;
+    line-height: 75px;
+     /* identical to box height */
+    width: 1600px;
+    /*height: 45px; */
+
+    /*display: flex;*/
+    align-items: center;
+   text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.whateller{
+    position: absolute;
+    top: 329px;
+    left: 7px;
+    /*border: solid;*/
+    color: white;
+    width: 1600px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 140%;
+    align-items: center;
+    text-align: center;
+    letter-spacing:0px;
+}
+.button{
+    position: absolute;
+    top: 410px;
+    left: 715px;
+}
+.socials {
+    display:flex;
+    justify-content:space-between;
+    position: absolute;
+    /*border: solid;*/
+    top: 637px;
+    left: 722px;
+    width: 170px;
+    height: 20px;
+}
