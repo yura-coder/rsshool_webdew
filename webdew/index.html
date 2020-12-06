@@ -45,16 +45,115 @@
     <title>prompt</title>
     <title>Text box width</title>
     <style>
-        #user {
-         width: 406px; /* Ширина поля в пикселах */
-         height: 45px;
-        } 
+        #mail {
+         width: 317px; /* Ширина поля в пикселах */
+         height: 46px;
+         border: none;
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 14px;
+         line-height: 140%;
+         color: #373737;
+         padding-left: 20px;
+        }
+        #send{
+        width: 67px;
+        height: 46px;
+        border: none; 
+        /*background:  #00AFDB;*/
+        }
+        .booton_send a {
+            width: 67px;
+            height: 46px; 
+           /* background:  #00AFDB;*/
+          }
+        .booton_send a:hover {
+            width: 75px;
+            height: 70px;
+            top: -5px; 
+            margin: 10px;
+            background:  #00AFDB;
+        }
+       </style>
+       <title>button_4</title>
+       <style>
+        .button_4 a{
+            position: absolute;
+            width: 127px;
+            height: 31px;
+            top: 238px;
+            left: 600px;
+            border: none;
+            background:#00AFDB;
+            padding-top: 15px;
+	        font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            align-items: center;
+            vertical-align: middle;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .button_4 a:hover {
+           /*background: rgba(0,0,0,0);*/
+            background: #2d9e0b;
+            border-radius: 10px;
+            top: 230px;
+            /*color: #3a7999;*/
+            color: #ffffff;
+            width: 127px;
+            height: 46px;
+            padding-top: 23px;
+	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
+        }
+       </style>
+       <title>button_5</title>
+       <style>
+           .button_5 a{
+            position: absolute;
+            width: 59px;
+            height: 34px;
+            top: 238px;
+            left: 727px;
+            border: none;
+            background: #009CC2;
+	        font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            align-items: center;
+            padding-top: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .button_5 a:hover {
+           /*background: rgba(0,0,0,0);*/
+            background: #2d9e0b;
+            border-radius: 10px;
+            top: 230px;
+            /*color: #3a7999;*/
+            color: #ffffff;
+            width: 59px;
+            height: 55px;
+            padding-top: 20px;
+	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
+        }
        </style>
 </head>
 <body>
     <div class="wrapper">
         <div class="webdew">
-            <img src="assets/bg-image-wrapper.jpg" alt="фон"> 
+            <div class="scech">
+                <img src="assets/bg-image-wrapper.jpg" alt="фон"> 
+            </div>
             <div class="header">
                 <div class="nav">
                    <p><a href="#"> About</a></p> 
@@ -203,8 +302,35 @@
             </div>
             <div class="e-mail">
                 <form action="mailto:vlad@htmlbook.ru" enctype="text/plain">
-                    <p><input name="e-mail" placeholder="e-mail" id="user" sice="15"><input type="submit"></p>
-                   </form>
+                    <p><input id="mail" name="e-mail" placeholder="E-mail" input id="send"></p>
+                    <div class="booton_send">
+                      <p><a href="#"> <input type="image" id="send"src="assets/btn-submit.jpg" ></a></p>
+                      <!--src="assets/btn-submit.jpg"-->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="download">
+            <div class="download_the">
+               <h4>Download the App</h4>
+            </div>
+            <div class="mashine">
+                <p>Machine code was the language of early programs, written in the instruction</br>
+                     set of the particular machine, often in binary notation.</p>
+            </div>
+            <div class="button_4">
+                <form >
+                    <button>
+                        <a href="#" class="button_4"> apple store </a> <!--Кнопка с текстом-->
+                    </button>
+                </form>
+            </div>
+            <div class="button_5">
+                <form >
+                    <button>
+                    <a href="#" class="button_5"><img src="assets/Combined shape 755.png" alt="" style="vertical-align:middle"></a> <!--Кнопка с рисунком-->
+                    </button>
+                </form>
             </div>
         </div>
     </div>

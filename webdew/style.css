@@ -3,15 +3,18 @@
     padding: 0px;
 }
 body {
-	/*background: rgb(190, 206, 52);*/ 
+	/*background: rgb(190, 206, 52);*/
 	margin:0px;
 	padding:0px;
 }
 .wrapper {
-    border: solid;
+    /*border: solid;*/
     width: 1600px;
     height: 4105px;
     margin: 0px auto; 
+}
+.scech{
+    z-index:1;
 }
 .webdew{
     position: relative;
@@ -94,6 +97,7 @@ body {
     left: 722px;
     width: 170px;
     height: 20px;
+    z-index:2;
 }
 .buton_mail{
     position: absolute;
@@ -282,7 +286,60 @@ body {
     position: absolute;
     top: 258px;
     left: 597px;
-    width: 406px;
-    height: 45px;
+    width: 390px;
+    height: 46px;
+    z-index:2;
+}
+.booton_send{
+    position: absolute;
+    top: 0px;
+    left: 337px;
+}
+.download{
+    position: relative;
+    z-index:1;
+    width: 1600px;
+    height: 464px;
+}
+.download_the{
+    position: absolute;
+    top: 120px;
+    left: 675px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #373737;
+    width: 255px;
+    height: 28px;
+    z-index:2;
+}
+.mashine{
+    position: absolute;
+    top: 169px;
+    left: 561px;
+    width: 480px;
+    height: 40px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    /*letter-spacing: 0.25px;*/
+    line-height: 140%; /* or 20px */
+    align-items: center;
+    text-align: center;
+    color: #4E4E4E;
+    z-index:2;
+
+}
+.button_4{
+    z-index:2;
+}
+.button_5{
     z-index:2;
 }
