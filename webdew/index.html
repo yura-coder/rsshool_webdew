@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <title>button</title>
+    <title>WebDev</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <style>button{
         border: none;
         background: none;
@@ -24,31 +24,54 @@
         margin: 15px;
         }
     </style>
-    <title>cursor</title>
     <style>
         .ne-resize { cursor: ne-resize; }
         .help { cursor: help; }
         .move { cursor: move; }
     </style>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>nav</title>
     <style>
-        .nav a {
+        .header-navigation a {
            color: #f5f0f0; /* Цвет обычной ссылки*/  
            text-decoration: none;  /*Убираем подчеркивание у ссылок */
           }
-        .nav a:hover {
+        .header-navigation a:hover {
         color: #2d9e0b;  /*Цвет ссылки при наведении на нее курсора мыши*/   
-        text-decoration: underline;  /*Добавляем подчеркивание */
+        /*text-decoration: underline;*/  /*Добавляем подчеркивание */
+        }
+        .nav_footer a {
+           color: #f5f0f0; /* Цвет обычной ссылки*/  
+           text-decoration: none;  /*Убираем подчеркивание у ссылок */
+          }
+        .nav_footer a:hover {
+        background: #2d9e0b;
+        border: solid;
+        border-color: #2d9e0b;
+        border-radius: 10px;
         }
     </style>
-    <title>prompt</title>
-    <title>Text box width</title>
+    <style>
+        .button_icons a {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            margin:0px;
+            padding-top:9px;
+            padding-left: 10px;
+          }
+        .button_icons a:hover { 
+        border-radius: 15px;
+        background: rgb(4, 107, 73);
+        }
+    </style>
     <style>
         #mail {
-         width: 317px; /* Ширина поля в пикселах */
+         /*position: absolute;*/
+         /*top: 0px;*/
+         left: 337px;
+         width: 317px; 
          height: 46px;
          border: none;
+         outline: none; /* Убираем контур вокруг ссылки */
          font-family: Roboto;
          font-style: normal;
          font-weight: normal;
@@ -64,6 +87,9 @@
         /*background:  #00AFDB;*/
         }
         .booton_send a {
+            position: absolute;
+            top: 0px;
+            left: 337px;
             width: 67px;
             height: 46px; 
            /* background:  #00AFDB;*/
@@ -71,13 +97,15 @@
         .booton_send a:hover {
             width: 75px;
             height: 70px;
-            top: -5px; 
-            margin: 10px;
-            background:  #00AFDB;
+            border-radius: 7px;
+            top: -12px;
+            margin-left: 5px; 
+            margin-top: -8px;
+            padding-top: 20px;
+            background: #00AFDB;
         }
-       </style>
-       <title>button_4</title>
-       <style>
+    </style>
+     <style>
         .button_4 a{
             position: absolute;
             width: 127px;
@@ -107,13 +135,12 @@
             /*color: #3a7999;*/
             color: #ffffff;
             width: 127px;
-            height: 46px;
+            height: 40px;
             padding-top: 23px;
 	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
         }
-       </style>
-       <title>button_5</title>
-       <style>
+    </style>
+    <style>
            .button_5 a{
             position: absolute;
             width: 59px;
@@ -142,11 +169,76 @@
             /*color: #3a7999;*/
             color: #ffffff;
             width: 59px;
-            height: 55px;
+            height: 45px;
             padding-top: 20px;
 	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
         }
-       </style>
+        .button_6 a{
+            position: absolute;
+            width: 127px;
+            height: 31px;
+            top: 238px;
+            left: 815px;
+            border: none;
+            background:#00AFDB;
+            padding-top: 15px;
+	        font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            align-items: center;
+            vertical-align: middle;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .button_6 a:hover {
+           /*background: rgba(0,0,0,0);*/
+            background: #86880a;
+            border-radius: 10px;
+            top: 230px;
+            /*color: #3a7999;*/
+            color: #ffffff;
+            width: 127px;
+            height: 40px;
+            padding-top: 23px;
+	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
+        }
+        .button_7 a{
+            position: absolute;
+            width: 59px;
+            height: 34px;
+            top: 238px;
+            left: 942px;
+            border: none;
+            background: #009CC2;
+	        font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            align-items: center;
+            padding-top: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .button_7 a:hover {
+           /*background: rgba(0,0,0,0);*/
+            background: #86880a;
+            border-radius: 10px;
+            top: 230px;
+            /*color: #3a7999;*/
+            color: #ffffff;
+            width: 59px;
+            height: 45px;
+            padding-top: 20px;
+	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
+        }
+     </style>
 </head>
 <body>
     <div class="wrapper">
@@ -155,21 +247,17 @@
                 <img src="assets/bg-image-wrapper.jpg" alt="фон"> 
             </div>
             <div class="header">
-                <div class="nav">
-                   <p><a href="#"> About</a></p> 
-                </div>
-                <div class="nav">
-                    <p><a href="#"> Syllabus</a></p>   
-                </div>
-                <div class="nav">
-                    <img src="assets/logo.png" alt="logo">   
-                 </div>
-                 <div class="nav">
-                    <p><a href="#">Projects</a></p>   
-                </div>
-                <div class="nav">
-                    <p><a href="#"> FAQ</a></p>   
-                </div>
+                  <div class="logo">
+                    <img src="assets/Vector.svg" alt="logo">
+                  </div>
+                  <nav class="header-navigation">
+                      <ul class="navigation-list" id="navigation_list">
+                      <li class="nav-elements"><a href="#about" class="nav-element nav-selected">About</a></li>
+                      <li class="nav-elements"><a href="#syllabus" class="nav-element">Syllabus</a></li>
+                      <li class="nav-elements"><a href="#projects" class="nav-element">Projects</a></li>
+                      <li class="nav-elements"><a href="#faq" class="nav-element">FAQ</a></li>
+                    </ul>
+                  </nav>
             </div>
             <div class="your_life">
                 <h1>your life is WebDev</h1>
@@ -178,28 +266,30 @@
                 <p>Whatever the approach to development may be, the final<br /> program must satisfy some fundamental properties</p>
             </div>
             <div class="button">
-                <form> 
-                    <button>
-                        <a href="#" class="ne-resize">    <img src="assets/default.jpg"  style="vertical-align:middle"></a>
-                    </button>
+                <form>   
+                        <a href="#" class="help"> <img src="assets/default.svg"  style="vertical-align:middle"></a>
                 </form>
             </div>
             <div class="socials">
                 <div class="button_icons">
+                    <!--<form> -->
+                           <a href="#" target="_blank" ><i class="fa fa-mail fa-2x"></i> <img src="assets/mail.svg"  style="vertical-align:middle"></a>
+                    <!--</form>-->
+                </div>
+                <div class="button_icons">
                     <form> 
-                        <button>
-                            <a href="#" class="ne-resize">    <img src="assets/mail_fff.png"  style="vertical-align:middle"></a>
-                        </button>
+                           <a href="#" target="_blank" ><i class="fa fa-facebook fa-2x"></i><img src="assets/facebook_fff.svg" alt="facebook"></a>
                     </form>
                 </div>
-                <div class="icons">
-                    <a href="help.html" class="help"><img src="assets/facebook_fff.png" alt="facebook"></a>
-                </div>
-                <div class="icons">
-                    <a href="#" class="pointer"><img src="assets/insta_fff.png" alt="insta"></a>
+                <div class="button_icons">
+                    <form> 
+                           <a href="#" target="_blank" ><i class="fa fa-instagram fa-2x"></i><img src="assets/insta_fff.svg" alt="insta"></a>
+                    </form>
                 </div> 
-                <div class="icons">
-                    <a href="#" class="pointer"><img src="assets/telegram_fff.png" alt="telegram"></a>
+                <div class="button_icons">
+                    <form> 
+                            <a href="#" target="_blank" ><i class="fa fa-instagram fa-2x"></i><img src="assets/telegram_fff.svg" alt="insta"></a>
+                    </form>
                 </div>   
             </div>
         </div>
@@ -230,12 +320,12 @@
         <div class="our_communitu">
             <div class="user_card">
                 <div class="userpic">
-                    <img src="assets/userpic-wrapper.jpg" alt="userpic">
+                    <img src="assets/userpic.svg" alt="userpic">
                 </div>
                 <div class="uour_comm">
                   <h4>our community</h4>
                 </div>
-                <div class="a_shacer">
+                <div class="a_hacker">
                   <p>A hacker is any skilled computer expert that</br>
                      uses their technical knowledge to overcome a</br>
                       problem, but it can also mean a security hacker</br>
@@ -302,10 +392,9 @@
             </div>
             <div class="e-mail">
                 <form action="mailto:vlad@htmlbook.ru" enctype="text/plain">
-                    <p><input id="mail" name="e-mail" placeholder="E-mail" input id="send"></p>
+                    <p><input id="mail" name="e-mail" placeholder="E-mail" ></p>
                     <div class="booton_send">
                       <p><a href="#"> <input type="image" id="send"src="assets/btn-submit.jpg" ></a></p>
-                      <!--src="assets/btn-submit.jpg"-->
                     </div>
                 </form>
             </div>
@@ -328,9 +417,48 @@
             <div class="button_5">
                 <form >
                     <button>
-                    <a href="#" class="button_5"><img src="assets/Combined shape 755.png" alt="" style="vertical-align:middle"></a> <!--Кнопка с рисунком-->
+                    <a href="#" class="button_5"><img src="assets/Combined shape 755.svg" alt="" style="vertical-align:middle"></a> <!--Кнопка с рисунком-->
                     </button>
                 </form>
+            </div>
+            <div class="button_6">
+                <form >
+                    <button>
+                     <a href="#" class="button_6"> Play Market </a> <!--Кнопка с текстом-->
+                    </button>
+                </form>
+            </div>
+            <div class="button_7">
+                <form >
+                    <button>
+                    <a href="#" class="button_7"><img src="assets/Combined shape 761.svg" alt="" style="vertical-align:middle"></a> <!--Кнопка с рисунком-->
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="nav_footer">
+                <div class="Credits">
+                    <p><a href="#">Credits</a></p>
+                </div>
+                <div class="dividet_1">
+                    <img src="assets/mnu-items-divider.jpg" > 
+                </div>
+                <div class="privacy">
+                    <p><a href="#">Privacy</a></p>
+                </div>
+                <div class="dividet_2">
+                    <img src="assets/mnu-items-divider.jpg" > 
+                </div>
+                <div class="Our_teams">
+                    <p><a href="#">Our teams</a></p>
+                </div>
+            </div>
+            <div class="logo_footer">
+                <img src="assets/Vector.svg" > 
+            </div>
+            <div class="by_Tonyem">
+                <p>by TonYem for RSS at 2020</p>
             </div>
         </div>
     </div>
