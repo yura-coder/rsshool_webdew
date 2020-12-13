@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDev</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>button{
+        border: none;
+        background: none;
+        } 
+        a.button_2:hover {
+        box-shadow:
+        0 0 23px rgba(0,0,0,0) inset,
+        0px 10px 10px 10px rgba(255, 0, 242, 0.5),
+        0 -10px 10px 10px rgba(255, 0, 242, 0.5);
+        margin: 5px;
+        }
+        a.button_3:hover {
+        box-shadow:
+        0 0 23px rgba(0,0,0,0) inset,
+        0px 10px 10px 10px #f0d959,
+        0 -10px 10px 10px  #f0d959;
+        margin: 15px;
+        }
+    </style>
+    <style>
+        .ne-resize { cursor: ne-resize; }
+        .help { cursor: help; }
+        .move { cursor: move; }
+    </style>
+    <style>
+        .header-navigation a {
+           color: #f5f0f0; /* Цвет обычной ссылки*/  
+           text-decoration: none;  /*Убираем подчеркивание у ссылок */
+          }
+        .header-navigation a:hover {
+        color: #2d9e0b;  /*Цвет ссылки при наведении на нее курсора мыши*/   
+        /*text-decoration: underline;*/  /*Добавляем подчеркивание */
+        }
+        .nav_footer a {
+           color: #f5f0f0; /* Цвет обычной ссылки*/  
+           text-decoration: none;  /*Убираем подчеркивание у ссылок */
+          }
+        .nav_footer a:hover {
+        background: #2d9e0b;
+        border: solid;
+        border-color: #2d9e0b;
+        border-radius: 10px;
+        }
+    </style>
+    <style>
+        .button_icons a {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            margin:0px;
+            padding-top:9px;
+            padding-left: 10px;
+          }
+        .button_icons a:hover { 
+        border-radius: 15px;
+        background: rgb(4, 107, 73);
+        }
+    </style>
+    <style>
+        #mail {
+         /*position: absolute;*/
+         /*top: 0px;*/
+         left: 337px;
+         width: 317px; 
+         height: 46px;
+         border: none;
+         outline: none; /* Убираем контур вокруг ссылки */
+         font-family: Roboto;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 14px;
+         line-height: 140%;
+         color: #373737;
+         padding-left: 20px;
+        }
+        #send{
+        width: 67px;
+        height: 46px;
+        border: none; 
+        /*background:  #00AFDB;*/
+        }
+        .booton_send a {
+            position: absolute;
+            top: 0px;
+            left: 337px;
+            width: 67px;
+            height: 46px; 
+           /* background:  #00AFDB;*/
+          }
+        .booton_send a:hover {
+            width: 75px;
+            height: 70px;
+            border-radius: 7px;
+            top: -12px;
+            margin-left: 5px; 
+            margin-top: -8px;
+            padding-top: 20px;
+            background: #00AFDB;
+        }
+    </style>
+     <style>
+        .button_4 a{
+            position: absolute;
+            width: 127px;
+            height: 31px;
+            top: 238px;
+            left: 600px;
+            border: none;
+            background:#00AFDB;
+            padding-top: 15px;
+	        font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            align-items: center;
+            vertical-align: middle;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .button_4 a:hover {
+           /*background: rgba(0,0,0,0);*/
+            background: #2d9e0b;
+            border-radius: 10px;
+            top: 230px;
+            /*color: #3a7999;*/
+            color: #ffffff;
+            width: 127px;
+            height: 40px;
+            padding-top: 23px;
+	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
+        }
+    </style>
+    <style>
+           .button_5 a{
+            position: absolute;
+            width: 59px;
+            height: 34px;
+            top: 238px;
+            left: 727px;
+            border: none;
+            background: #009CC2;
+	        font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            align-items: center;
+            padding-top: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .button_5 a:hover {
+           /*background: rgba(0,0,0,0);*/
+            background: #2d9e0b;
+            border-radius: 10px;
+            top: 230px;
+            /*color: #3a7999;*/
+            color: #ffffff;
+            width: 59px;
+            height: 45px;
+            padding-top: 20px;
+	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
+        }
+        .button_6 a{
+            position: absolute;
+            width: 127px;
+            height: 31px;
+            top: 238px;
+            left: 815px;
+            border: none;
+            background:#00AFDB;
+            padding-top: 15px;
+	        font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            align-items: center;
+            vertical-align: middle;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .button_6 a:hover {
+           /*background: rgba(0,0,0,0);*/
+            background: #86880a;
+            border-radius: 10px;
+            top: 230px;
+            /*color: #3a7999;*/
+            color: #ffffff;
+            width: 127px;
+            height: 40px;
+            padding-top: 23px;
+	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
+        }
+        .button_7 a{
+            position: absolute;
+            width: 59px;
+            height: 34px;
+            top: 238px;
+            left: 942px;
+            border: none;
+            background: #009CC2;
+	        font-family: Roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 16px;
+            text-decoration: none;
+            align-items: center;
+            padding-top: 12px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+        .button_7 a:hover {
+           /*background: rgba(0,0,0,0);*/
+            background: #86880a;
+            border-radius: 10px;
+            top: 230px;
+            /*color: #3a7999;*/
+            color: #ffffff;
+            width: 59px;
+            height: 45px;
+            padding-top: 20px;
+	        /*box-shadow: inset 0 0 0 3px #3a7999;*/
+        }
+     </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="webdew">
+            <div class="scech">
+                <img src="assets/bg-image-wrapper.jpg" alt="фон"> 
+            </div>
+            <div class="header">
+                  <div class="logo">
+                    <img src="assets/Vector.svg" alt="logo">
+                  </div>
+                  <nav class="header-navigation">
+                      <ul class="navigation-list" id="navigation_list">
+                      <li class="nav-elements"><a href="#about" class="nav-element nav-selected">About</a></li>
+                      <li class="nav-elements"><a href="#syllabus" class="nav-element">Syllabus</a></li>
+                      <li class="nav-elements"><a href="#projects" class="nav-element">Projects</a></li>
+                      <li class="nav-elements"><a href="#faq" class="nav-element">FAQ</a></li>
+                    </ul>
+                  </nav>
+            </div>
+            <div class="your_life">
+                <h1>your life is WebDev</h1>
+            </div>
+            <div class="whateller">
+                <p>Whatever the approach to development may be, the final<br /> program must satisfy some fundamental properties</p>
+            </div>
+            <div class="button">
+                <form>   
+                        <a href="#" class="help"> <img src="assets/default.svg"  style="vertical-align:middle"></a>
+                </form>
+            </div>
+            <div class="socials">
+                <div class="button_icons">
+                    <!--<form> -->
+                           <a href="#" target="_blank" ><i class="fa fa-mail fa-2x"></i> <img src="assets/mail.svg"  style="vertical-align:middle"></a>
+                    <!--</form>-->
+                </div>
+                <div class="button_icons">
+                    <form> 
+                           <a href="#" target="_blank" ><i class="fa fa-facebook fa-2x"></i><img src="assets/facebook_fff.svg" alt="facebook"></a>
+                    </form>
+                </div>
+                <div class="button_icons">
+                    <form> 
+                           <a href="#" target="_blank" ><i class="fa fa-instagram fa-2x"></i><img src="assets/insta_fff.svg" alt="insta"></a>
+                    </form>
+                </div> 
+                <div class="button_icons">
+                    <form> 
+                            <a href="#" target="_blank" ><i class="fa fa-instagram fa-2x"></i><img src="assets/telegram_fff.svg" alt="insta"></a>
+                    </form>
+                </div>   
+            </div>
+        </div>
+        <div class="pappresent">
+            <div class="content_1">
+                <div class="your_idea">
+                    <h4>Rappresent your idea with<br />
+                     a smart Design</h4>
+                </div>
+                <div class="task">
+                    <p>Tasks accompanying and related to programming include: <br />
+                    testing, debugging, source code maintenance,<strong> implementation of<br /> 
+                    build systems,</strong> and management of derived artifacts, such as the<br />
+                    machine code of computer programs. </p>
+                </div>
+                <div class="button_2">
+                       <form> 
+                           <button>
+                            <a href="#" class="button_2"> <img src="assets/default.jpg" alt="" style="vertical-align:middle"></a>
+                           </button>
+                        </form>
+                </div>
+            </div>
+            <div class="image_1">
+                <img src="assets/content-image-1.jpg" alt="image_1">
+            </div>
+        </div>
+        <div class="our_communitu">
+            <div class="user_card">
+                <div class="userpic">
+                    <img src="assets/userpic.svg" alt="userpic">
+                </div>
+                <div class="uour_comm">
+                  <h4>our community</h4>
+                </div>
+                <div class="a_hacker">
+                  <p>A hacker is any skilled computer expert that</br>
+                     uses their technical knowledge to overcome a</br>
+                      problem, but it can also mean a security hacker</br>
+                       in common language</p>  
+                </div>
+            </div>
+            <div class="slider_items">
+                <div class="rectange_2">
+                    <img src="assets/Rectangle 2.jpg" alt="items">
+                </div>
+                <div class="rectange_2">
+                    <img src="assets/Rectangle 2_.jpg" alt="items">
+                </div>
+                <div class="rectange_2"; style="overflow: hidden; width: 20px; ">
+                    <img src="assets/Rectangle 2__.jpg" alt="items">
+                </div>
+            </div>
+            <div class="slider_nav_items">
+                <div class="arrow">
+                    <a href="#" class="move"> <img src="assets/arrow-left.jpg" ></a>
+                </div>
+                <div class="one">
+                    <img src="assets/1.jpg" >
+                </div>
+                <div class="slesh">
+                    <img src="assets/divider-icon.jpg" >
+                </div>
+                <div class="five">
+                    <img src="assets/5.jpg">
+                </div>
+                <div class="arrow_right">
+                    <a href="#" class="move"><img src="assets/arrow-right.jpg" > </a>  
+                </div>
+            </div>
+        </div>
+        <div class="implement">
+            <div class="content_3">
+                <div class="implement_right">
+                    <h4>Implement right Code</h4>
+                </div>
+                <div class="these">
+                    <p>These might be considered part of the<strong> programming process,</strong> but</br>
+                         often the term software development is used for this larger</br>
+                          process with the term programming, implementation </p>
+                </div>
+                <div class="button_3">
+                       <form> 
+                           <button>
+                            <a href="#" class="button_3"> <img src="assets/default_3.jpg" alt="" style="vertical-align:middle"></a>
+                           </button>
+                        </form>
+                </div>
+            </div>
+            <div class="image_2">
+                <img src="assets/content-image-2.jpg" alt="image_2">
+            </div>
+        </div>
+        <div class="sing_up">
+            <div class="pexels">
+                <img src="assets/pexels-christina-morillo-1181675 1.jpg" alt="pexels">
+            </div>
+            <div class="sing_up_for">
+                <h4>sign up for our newsletter</h4>
+            </div>
+            <div class="e-mail">
+                <form action="mailto:vlad@htmlbook.ru" enctype="text/plain">
+                    <p><input id="mail" name="e-mail" placeholder="E-mail" ></p>
+                    <div class="booton_send">
+                      <p><a href="#"> <input type="image" id="send"src="assets/btn-submit.jpg" ></a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="download">
+            <div class="download_the">
+               <h4>Download the App</h4>
+            </div>
+            <div class="mashine">
+                <p>Machine code was the language of early programs, written in the instruction</br>
+                     set of the particular machine, often in binary notation.</p>
+            </div>
+            <div class="button_4">
+                <form >
+                    <button>
+                        <a href="#" class="button_4"> apple store </a> <!--Кнопка с текстом-->
+                    </button>
+                </form>
+            </div>
+            <div class="button_5">
+                <form >
+                    <button>
+                    <a href="#" class="button_5"><img src="assets/Combined shape 755.svg" alt="" style="vertical-align:middle"></a> <!--Кнопка с рисунком-->
+                    </button>
+                </form>
+            </div>
+            <div class="button_6">
+                <form >
+                    <button>
+                     <a href="#" class="button_6"> Play Market </a> <!--Кнопка с текстом-->
+                    </button>
+                </form>
+            </div>
+            <div class="button_7">
+                <form >
+                    <button>
+                    <a href="#" class="button_7"><img src="assets/Combined shape 761.svg" alt="" style="vertical-align:middle"></a> <!--Кнопка с рисунком-->
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="nav_footer">
+                <div class="Credits">
+                    <p><a href="#">Credits</a></p>
+                </div>
+                <div class="dividet_1">
+                    <img src="assets/mnu-items-divider.jpg" > 
+                </div>
+                <div class="privacy">
+                    <p><a href="#">Privacy</a></p>
+                </div>
+                <div class="dividet_2">
+                    <img src="assets/mnu-items-divider.jpg" > 
+                </div>
+                <div class="Our_teams">
+                    <p><a href="#">Our teams</a></p>
+                </div>
+            </div>
+            <div class="logo_footer">
+                <img src="assets/Vector.svg" > 
+            </div>
+            <div class="by_Tonyem">
+                <p>by TonYem for RSS at 2020</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
